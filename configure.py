@@ -86,8 +86,8 @@ def write_configuration(args):
 
   add_plugin_path("iree_cpu",
                   "iree/integrations/pjrt/cpu/pjrt_plugin_iree_cpu.so")
-  add_plugin_path("iree_cuda",
-                  "iree/integrations/pjrt/cuda/pjrt_plugin_iree_cuda.so")
+  add_plugin_path("iree_rocm",
+                  "iree/integrations/pjrt/rocm/pjrt_plugin_iree_rocm.so")
 
   # Give the environment to bazel.
   with open(REPO_ROOT / "env.bazelrc", "wt") as env_bazelrc, open(
